@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>SAT – Pagos en línea</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -82,6 +82,34 @@ body{font-family:Arial,Helvetica,sans-serif;background:#e8e8e8;min-height:100vh;
 .blue-dash{color:#2768c0;font-weight:400;cursor:pointer;}
 
 .footer{background:#fff;border-top:1px solid #ddd;text-align:center;padding:12px;font-size:12px;color:#888;}
+
+  @media (max-width: 600px) {
+    .hdr-right { font-size: 14px; }
+    .card { margin: 0; border-left: none; border-right: none; }
+    .stepper { padding: 12px 14px; }
+    .wmsec { padding: 16px 0 24px; min-height: auto; }
+    .fmtitle { font-size: 13px; }
+    .flabel { width: 92vw; }
+    .fselect, .finput { width: 92vw; font-size: 15px; height: 42px; }
+    .captcha-wrap { width: 92vw; }
+    .btnbuscar { width: 92vw; height: 44px; font-size: 15px; }
+    .nota { font-size: 12px; padding: 0 16px; }
+    .btnpap img, .btnpap { max-width: 92vw !important; width: 92vw !important; }
+    .resview { padding: 14px 12px 24px; }
+    /* tabla resultados scroll horizontal en móvil */
+    .tblwrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .tbl-head, .tbl-sub { font-size: 11px; padding: 8px 10px; }
+    .tbl-cols { grid-template-columns: 28px 55px 75px 80px 105px 120px 95px; font-size: 10px; padding: 6px 10px; min-width: 580px; }
+    .tbl-row  { grid-template-columns: 28px 55px 75px 80px 105px 120px 95px; font-size: 11px; padding: 8px 10px; min-width: 580px; }
+    .pagar-row label { font-size: 13px; }
+    .res-placa { font-size: 13px; }
+    .btnreg { font-size: 13px; }
+    .cap-small { max-width: 60px; font-size: 7px; }
+  }
+  @media (max-width: 380px) {
+    .fselect, .finput, .btnbuscar { width: 96vw; }
+    .captcha-wrap { width: 96vw; }
+  }
 </style>
 </head>
 <body>
